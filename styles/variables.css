@@ -4,4 +4,13 @@
   --accent-font: 'PressStart2P';
   --main-text-font-weight: 400;
   --title-font-weight: 700;
+  --page-section-inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);;
+  --page-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --page-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+@media(width <= 375px) {
+  :root {
+    --page-section-inline-size: 100%;
+  }
 }
