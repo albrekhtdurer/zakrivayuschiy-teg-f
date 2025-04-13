@@ -22,6 +22,12 @@
 
 .header {
   font-family: var(--accent-font), 'Courier', 'monospace';
+  min-block-size: 323px;
+  block-size: 100%;
+  padding: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem) clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  margin-block-start: 100px;
+  display: flex;
+  gap: 20px;
 }
 
 .page__title {
@@ -30,6 +36,8 @@
 
 .page__subtitle {
   font-size: var(--page-subtitle-font-size);
+  text-transform: uppercase;
+  text-wrap: nowrap;
 }
 
 .page__section {
