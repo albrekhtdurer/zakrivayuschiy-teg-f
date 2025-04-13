@@ -40,6 +40,7 @@
   font-size: var(--page-subtitle-font-size);
   text-transform: uppercase;
   text-wrap: nowrap;
+  text-align: center;
 }
 
 .page__section {
@@ -57,9 +58,26 @@
   gap: 52px;
 }
 
-/*TODO: вынести размер текста*/
+.card {
+  display: flex;
+  align-items: start;
+}
 
 .card__title {
   font-variation-settings: 'wght' var(--title-font-weight);
   font-size: var(--main-text-font-size);
+  text-align: start;
+  padding: 3px 10px;
+}
+
+.card__image {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.card__text-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
