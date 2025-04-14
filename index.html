@@ -142,10 +142,21 @@
       </article>
     </main>
     <footer>
-      <button class="button text-button save__button">
+      <button class="button text-button save__button" onclick="window['save-popup'].showModal()">
         <svg class="save__icon-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><use href="./svg/floppy.svg#floppy"></use></svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog id="save-popup" class="save__popup">
+        <svg class="save__icon-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><use href="./svg/floppy.svg#floppy"></use></svg>
+        <span class="button__text">Вставьте дискету, чтобы продолжить</span>
+        <button
+          onclick="window['save-popup'].close()"
+          class="button"
+        >
+          <span class="button__text">Ok</span>
+        </button>
+      </dialog>
+
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
