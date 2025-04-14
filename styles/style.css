@@ -56,6 +56,8 @@
   display: flex;
   flex-direction: column;
   gap: 52px;
+  /*TODO: media - 52 для маленького экрана*/
+  margin-block-end: 50px;
 }
 
 .card {
@@ -93,14 +95,25 @@
   background-color: transparent;
 }
 
+.text-button {
+  border: 2px solid #000;
+  font-family: var(--accent-font), 'Courier', 'monospace';
+  font-size: 14px;
+}
+
 .card__icon-button {
   outline: none;
   border: 1px solid transparent;
 }
 
 .card__like-button {
-  border: 2px solid #000;
-  font-family: var(--accent-font), 'Courier', 'monospace';
   padding: 12.5px 37px;
-  font-size: 14px;
+}
+
+.save__button {
+  padding: 18.5px 21px;
+}
+
+.save__icon-small {
+  block-size: 21px;
 }
