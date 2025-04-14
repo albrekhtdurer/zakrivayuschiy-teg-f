@@ -78,8 +78,8 @@
 
 .card__label {
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-block-start: 30px;
+  inset-inline-end: 18px;
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
