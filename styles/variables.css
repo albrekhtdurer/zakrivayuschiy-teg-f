@@ -9,6 +9,7 @@
   --page-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --page-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --card-font-size: 18px;
+  --text-stroke-color: #fff;
 }
 
 @media(width <= 375px) {
