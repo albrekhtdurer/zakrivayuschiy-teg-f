@@ -45,7 +45,7 @@
 
 .page__section {
   inline-size: var(--page-section-inline-size);
-  border: 2px solid #000;
+  border: 2px solid rgb(0 0 0 / 1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,9 +55,8 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 52px;
-  /*TODO: media - 52 для маленького экрана*/
-  margin-block-end: 50px;
+  gap: var(--gap-between-cards);
+  margin-block-end: var(--content-margin-block-end);
 }
 
 .card {
@@ -69,7 +68,7 @@
   font-variation-settings: 'wght' var(--title-font-weight);
   font-size: var(--main-text-font-size);
   text-align: start;
-  padding: 3px 10px;
+  padding: var(--card-title-padding);
 }
 
 .card__image-container {
@@ -91,7 +90,7 @@
   0 -1px var(--text-stroke-color);
 }
 
-@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
   .card__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     text-stroke: 1px var(--text-stroke-color);
@@ -120,12 +119,13 @@
 
 .button {
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid rgb(0 0 0 / 1);
 }
 
 .button__text {
   font-family: var(--accent-font), 'Courier', 'monospace';
   font-size: 14px;
+  line-height: 90%;
 }
 
 .card__icon-button {
@@ -137,10 +137,72 @@
   padding: 12.5px 37px;
 }
 
+.footer {
+  margin-block-end: var(--footer-margin-block-end);
+}
+
 .save__button {
-  padding: 18.5px 21px;
+  padding: var(--save-button-padding);
+}
+
+@media(width <= 375px) {
+  .save__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 .save__icon-small {
   block-size: 21px;
+}
+
+@media (width <=375px) {
+  .save__icon-small {
+    block-size: 28px;
+  }
+}
+
+.save__popup {
+  display: none;
+  inline-size: var(--save-popup-inline-size);
+  padding: 30px;
+}
+
+.save__popup[open] {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.save__popup[open]::backdrop {
+  background-color: rgb(0 0 0 / 0.75) ;
+}
+
+.save__icon-big {
+  block-size: 39px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.save__popup-text {
+  line-height: 1.5;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.save__popup-close-button {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  padding: var(--save-popup-close-button-padding);
+}
+
+.save__popup-close-button-text {
+  text-transform: uppercase;
 }

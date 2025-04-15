@@ -5,15 +5,28 @@
   --main-text-font-size: 18px;
   --main-text-font-weight: 400;
   --title-font-weight: 700;
-  --page-section-inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);;
+  --page-section-inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
   --page-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --page-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --card-font-size: 18px;
-  --text-stroke-color: #fff;
+  --text-stroke-color: rgb(255 255 255 / 1);
+  --save-popup-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  --gap-between-cards: 50px;
+  --content-margin-block-end: 50px;
+  --card-title-padding: 3px 10px;
+  --save-button-padding: 18.5px 21px;
+  --save-popup-close-button-padding: 6.5px 132.5px;
+  --footer-margin-block-end: 105px;
 }
 
 @media(width <= 375px) {
   :root {
     --page-section-inline-size: 100%;
+    --gap-between-cards: 52px;
+    --content-margin-block-end: 52px;
+    --card-title-padding: 4px 10px;
+    --save-button-padding: 15px 20.5px 15px 19.5px;
+    --footer-margin-block-end: 102px;
+    --save-popup-close-button-padding: 6.5px 114.5px;
   }
 }
