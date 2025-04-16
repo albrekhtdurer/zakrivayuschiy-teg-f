@@ -26,18 +26,21 @@
   font-family: var(--accent-font), 'Courier', 'monospace';
   min-block-size: 323px;
   block-size: 100%;
-  padding: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem) clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   margin-block: 100px;
   display: flex;
   gap: 20px;
+  line-height: 1;
 }
 
 .page__title {
   font-size: var(--page-title-font-size);
+  font-weight: var(--main-text-font-weight);
 }
 
 .page__subtitle {
   font-size: var(--page-subtitle-font-size);
+  font-weight: var(--main-text-font-weight);
   text-transform: uppercase;
   text-wrap: nowrap;
   text-align: center;
@@ -73,6 +76,8 @@
 
 .card__image-container {
   position: relative;
+  border-block-start: 2px solid rgb(0 0 0 / 1);
+  border-block-end: 2px solid rgb(0 0 0 / 1);
 }
 
 .card__label {
@@ -82,7 +87,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
-  mix-blend-mode: hard-light;
   text-shadow:
   -1px 0 var(--text-stroke-color), 
   0 1px var(--text-stroke-color), 
@@ -99,8 +103,20 @@
 } 
 
 .card__image {
-  block-size: 100%;
   inline-size: 100%;
+  max-inline-size: 696px;
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: cover;
+  mix-blend-mode: hard-light;
+}
+
+.image-saturate {
+  filter: saturate(200%);
+}
+
+.image-sepia {
+  filter: sepia(63%);
 }
 
 .card__text-container {
