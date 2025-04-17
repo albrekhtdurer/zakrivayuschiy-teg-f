@@ -9,7 +9,7 @@
   --main-text-font-size: 18px;
   --main-text-font-weight: 400;
   --title-font-weight: 700;
-  --page-section-inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  --page-section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);;
   --page-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --page-subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --card-font-size: 18px;
@@ -18,7 +18,7 @@
   --gap-between-cards: 50px;
   --content-margin-block-end: 50px;
   --card-title-padding: 5px 10px;
-  --save-button-padding: 18.5px 21px;
+  --save-button-padding: 13px 21px;
   --save-popup-close-button-padding: 6.5px 132.5px;
   --footer-margin-block-end: 105px;
   --background-picture: repeating-linear-gradient(rgb(211 211 211) 0 2px, transparent 2px 4px), repeating-linear-gradient(90deg,rgb(211 211 211) 0 2px, transparent 2px 4px), repeating-linear-gradient(rgb(231 231 231) 0%, rgb(231 231 231) 0.01%, rgb(26 26 26)100%);
