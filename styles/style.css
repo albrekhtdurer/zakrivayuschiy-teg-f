@@ -147,6 +147,9 @@
   font-family: var(--accent-font), 'Courier', 'monospace';
   font-size: 14px;
   line-height: 90%;
+}
+
+.button__text-blended {
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
