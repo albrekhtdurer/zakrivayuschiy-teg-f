@@ -109,9 +109,9 @@
   font-size: 14px;
   font-weight: 400;
   text-shadow:
-  -1px 0 var(--text-stroke-color), 
-  0 1px var(--text-stroke-color), 
-  1px 0 var(--text-stroke-color), 
+  -1px 0 var(--text-stroke-color),
+  0 1px var(--text-stroke-color),
+  1px 0 var(--text-stroke-color),
   0 -1px var(--text-stroke-color);
   mix-blend-mode: hard-light;
 }
@@ -141,6 +141,10 @@
 .button {
   background-color: transparent;
   border: 2px solid var(--accent-color);
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button__text {
