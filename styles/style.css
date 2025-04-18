@@ -226,6 +226,17 @@
   transition: 0.3s linear 0.05s;
 }
 
+.like-icon:active .core {
+  fill: var(--heart-fill-color);
+  transition: 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: 0.3s linear 0.05s;
+}
+
+
 .card__like-button {
   align-self: flex-start;
   padding: 7px 35px;
