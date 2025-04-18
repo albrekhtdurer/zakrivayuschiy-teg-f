@@ -98,10 +98,29 @@
   filter: saturate(200%);
 }
 
+.image-brightness {
+  filter: brightness(120%);
+}
+
 .image-sepia {
   filter: sepia(63%);
 }
 
+.image-blur {
+  filter: blur(3px);
+}
+
+.image-hue-rotate-opacity {
+  filter: hue-rotate(-90deg) opacity(70%);
+}
+
+.image-grayscale {
+  filter: grayscale(0.7);
+}
+
+.image-contrast {
+  filter: contrast(60%);
+}
 .card__label {
   position: absolute;
   inset-block-start: 30px;
