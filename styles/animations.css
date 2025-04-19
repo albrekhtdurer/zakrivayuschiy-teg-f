@@ -11,23 +11,26 @@
 */
 
 @keyframes scaling {
+
   from {
     scale: 1;
   }
+
   to {
     scale: 1.25;
   }
 }
 
 @keyframes remove-opacity {
+
   from {
-    opacity: 0%;
+    opacity: 0;
   }
+
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
-
 
 .like-icon .core {
   fill: transparent;
@@ -80,7 +83,7 @@
 }
 
 .like-icon.is-liked {
-  animation: scaling 0.3 ease-in  0.1s;
+  animation: scaling 0.3 ease-in 0.1s;
 }
 
 .like-icon.is-liked .sparks {
