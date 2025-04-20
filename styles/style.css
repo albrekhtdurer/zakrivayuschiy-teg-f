@@ -32,7 +32,7 @@
   margin-block: 100px;
   padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem)
     clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
-  font-family: var(--accent-font), Courier, monospace;
+  font-family: var(--accent-font), Courier, fantasy;
   line-height: 1;
   background-color: var(--content-elements-background-color);
   block-size: 100%;
@@ -123,7 +123,7 @@
 
 .card__label {
   position: absolute;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Courier, fantasy;
   font-weight: 400;
   font-size: 14px;
   text-shadow:
@@ -181,7 +181,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font), Courier, monospace;
+  font-family: var(--accent-font), Courier, fantasy;
   font-size: 14px;
   line-height: 90%;
 }
