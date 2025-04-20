@@ -216,6 +216,8 @@
   border: 2px solid transparent;
   padding: 2px;
   max-block-size: 39px;
+  display: flex;
+  align-items: center;
 }
 
 .card__icon-button:focus {
