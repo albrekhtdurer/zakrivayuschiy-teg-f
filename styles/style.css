@@ -137,6 +137,7 @@
 }
 
 @media (width <=375px) {
+
   .card__label {
     inset-inline-end: 10px;
   }
@@ -217,16 +218,16 @@
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
   border: 2px solid transparent;
   padding: 2px;
   max-block-size: 39px;
-  display: flex;
-  align-items: center;
 }
 
 .card__icon-button:focus {
-  outline: none;
   border: 2px solid var(--accent-color);
+  outline: none;
 }
 
 .sparks {
@@ -239,15 +240,16 @@
 }
 
 .save__button {
-  padding: var(--save-button-padding);
-  background-color: var(--content-elements-background-color);
-  margin-block-end: var(--content-margin-block-end);
   margin-inline-start: var(--save-button-inline-margin);
   margin-inline-end: var(--save-button-inline-margin);
+  margin-block-end: var(--content-margin-block-end);
+  padding: var(--save-button-padding);
+  background-color: var(--content-elements-background-color);
   text-wrap: nowrap;
 }
 
 @media (width <= 375px) {
+
   .save__button {
     display: flex;
     flex-direction: column;
