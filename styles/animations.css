@@ -34,7 +34,7 @@
 
 .like-icon .core {
   fill: transparent;
-  transition: 0.3s 0.05s linear;
+  transition: 0.3s linear;
 }
 
 .like-icon .main-body {
