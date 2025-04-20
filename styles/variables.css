@@ -25,11 +25,10 @@
     22.0625rem
   );
   --gap-between-cards: 50px;
-  --content-margin-block-end: 50px;
   --card-title-padding: 5px 10px;
   --save-button-padding: 13px 21px;
   --save-popup-close-button-padding: 6.5px 132.5px;
-  --footer-margin-block-end: 105px;
+  --content-margin-block-end: 105px;
   --background-picture:
     repeating-linear-gradient(rgb(211 211 211) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(
@@ -44,6 +43,7 @@
     );
   --heart-contour-color: rgb(0 0 0);
   --heart-fill-color: rgb(255 0 0);
+  --save-button-inline-margin: 180px;
 }
 
 @media (width <= 375px) {
@@ -51,10 +51,10 @@
   :root {
     --page-section-inline-size: 100%;
     --gap-between-cards: 52px;
-    --content-margin-block-end: 52px;
+    --content-margin-block-end: 102px;
     --card-title-padding: 4px 10px;
     --save-button-padding: 15px 20.5px 15px 19.5px;
-    --footer-margin-block-end: 102px;
     --save-popup-close-button-padding: 6.5px 114.5px;
+    --save-button-inline-margin: 32px;
   }
 }

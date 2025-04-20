@@ -64,7 +64,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap-between-cards);
-  margin-block-end: var(--content-margin-block-end);
 }
 
 .card {
@@ -168,7 +167,7 @@
   gap: 5px;
   align-self: end;
   padding-inline-start: 30px;
-  padding-inline-end: 20px;
+  padding-inline-end: 25px;
   padding-block-end: 24px;
 }
 
@@ -239,17 +238,16 @@
   padding: 7px 35px;
 }
 
-.footer {
-  margin-block-end: var(--footer-margin-block-end);
-  background-color: var(--content-elements-background-color);
-}
-
 .save__button {
   padding: var(--save-button-padding);
+  background-color: var(--content-elements-background-color);
+  margin-block-end: var(--content-margin-block-end);
+  margin-inline-start: var(--save-button-inline-margin);
+  margin-inline-end: var(--save-button-inline-margin);
+  text-wrap: nowrap;
 }
 
 @media (width <= 375px) {
-
   .save__button {
     display: flex;
     flex-direction: column;
