@@ -132,9 +132,15 @@
     0 1px var(--text-stroke-color),
     1px 0 var(--text-stroke-color),
     0 -1px var(--text-stroke-color);
-  inset-block-start: 30px;
-  inset-inline-end: 18px;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
   mix-blend-mode: hard-light;
+}
+
+@media (width <=375px) {
+  .card__label {
+    inset-inline-end: 10px;
+  }
 }
 
 @supports (
