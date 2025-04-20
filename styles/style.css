@@ -35,7 +35,6 @@
   font-family: var(--accent-font), Courier, monospace;
   line-height: 1;
   background-color: var(--content-elements-background-color);
-  min-block-size: 323px;
   block-size: 100%;
 }
 
